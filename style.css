@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+figure {
+    background-color: #eee;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .row__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .row__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
