@@ -1,19 +1,22 @@
-
 class User {
-    constructor(src, alt, title, descr) {
-        this.src = src;
-        this.alt = alt;
-        this.title = title;
-        this.descr = descr;
+    src: string
+    alt:string
+    title: string
+    descr: string
+    constructor(src: string, alt: string, title: string, descr: string) {
+        this.src = src
+        this.alt = alt
+        this.title = title
+        this.descr = descr
     }
 
     render() {
-        const grid = document.querySelector('.row__grid');
+    const grid = document.querySelector('.row__grid') as HTMLElement
         grid.insertAdjacentHTML('beforeend', `
         <div class="row__flex-item">
             <figure>
                 <img src=${this.src} alt=${this.alt}>
-                <figcaption>${this.title}</figcaption>
+                <figcaption class="text">${this.title}</figcaption>
                 <figcaption>${this.descr}</figcaption>
             </figure>
         </div>
@@ -31,15 +34,16 @@ new User(
 new User(
     "img/meTwo.jpg",
     "Fil",
-    "Университет",
-    "Выступление"
+    "Выступление",
+    "Университет"
+    
 ).render();
 
 new User(
     "img/photome.jpg",
     "Fil",
     "Фотосет",
-    "Финал ЖЛФЛ"
+    "Жодино(Финал ЖЛФЛ)"
 ).render();
 
 new User(
@@ -52,18 +56,13 @@ new User(
 new User(
     "img/FilippNight.jpg",
     "Fil",
-    "Жодино-Южное",
-    "Футбол"
+    "Футбол",
+    "Жодино-Южное(Гродно)"
 ).render();
 
 new User(
     "img/meAndyou.jpg",
     "Fil",
     "Семейное фото",
-    "Тоже на футболе"
+    "Тоже на футболе(Тоже в Гродно)"
 ).render();
-
-
-
-
-

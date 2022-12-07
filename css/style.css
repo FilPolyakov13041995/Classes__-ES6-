@@ -7,7 +7,7 @@
 h1 {
     text-align: center;
     padding: 20px;
-    background-color: #eee;
+    background-color: rgb(27, 217, 211);
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -30,8 +30,12 @@ img {
 
 figcaption {
     text-align: center;
+    font-size: 18px;
+    padding: 3px;
+}
+.text {
     font-size: 25px;
-    padding: 10px;
+    font-weight: 600;
 }
 
 figure {
